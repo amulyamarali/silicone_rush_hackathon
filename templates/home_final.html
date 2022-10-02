@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<title>Quikare-Home</title>
+<style>
+.parallax {
+   /*The image used */
+  /*background-image: url("img_parallax.jpg");*/
+
+  /* Set a specific height */
+	min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg_fullscreen{
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -10;
+}
+
+.main{
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	width: auto;
+	left: 100px;
+	right: 100px;
+	background-color: #d49b54 ;
+	font-size: 30px;
+	padding-right: 50px;
+	padding-left: 50px;
+	opacity: 0.9;
+	z-index: -1;
+	
+}
+
+.nav_tag{
+	/*position: fixed;*/
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  font-family: 'Oswald', sans-serif ;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+  border-bottom: 2px solid white;
+}
+nav ul li.active a{
+  border-bottom: 2px solid white;
+}
+
+#text{
+	font-family: 'Roboto Mono', monospace;
+	margin-left:100px ;	
+	position: absolute;
+	color:  white;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	z-index: 9;
+
+}
+footer {
+	align-items: center;
+	background-color: #262626;
+	bottom: 0;
+	color: #666666;
+	display: flex;
+	font-size: 5em;
+	height: 100px;
+	justify-content: center;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: -1;
+}
+
+/*footer*/
+section{
+  text-align:center;
+}
+.footer #button{
+  width:35px;
+  height:35px;
+  border: #727172 12px solid;
+  border-radius:35px;
+  margin:0 auto;
+  position:relative;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+  width:35px;
+  height:35px;
+  border: #3A3A3A 12px solid;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  position:relative;
+}
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  z-index:999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  height: 10em;
+}
+.footer #container{
+  margin-top:5px;
+  width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+  width:150px;
+  height:auto;
+  margin:0 auto;
+}
+.footer_center{
+  width:500px;
+  float:left;
+  text-align:center;
+}
+.footer h3{
+  font-family: 'Helvetica';
+  font-size: 30px;
+  font-weight: 100;
+  margin-top:70px;
+  margin-left:40px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="nav_tag">
+<header>
+<nav>
+  <ul>
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="/threat"> Weather Threat Analysis</a></li>
+    <li><a href="/predict">Launch Detector</a></li>
+        
+  </ul>  
+</nav>
+</header>
+</div>
+<h2 id="text"> Quikare </h2>
+
+<div class="parallax">
+	<div class="bg_fullscreen">
+		<video autoplay loop muted width="1550px">
+			<source src="static\assets\bg3_vid.mp4">
+		</video>
+	</div>
+</div>
+<div>
+
+</div>
+<div class="main">
+	<br>
+	<h3 style="font-family: 'Roboto Mono', monospace; font-weight:2500;">OUR MOTTO</h3> 
+	
+Every year thousands of people lose their lives due to calamities, both natural and man made. Many lives are lost majorly because of the existing time delay in providing the basic life essential. Every aid and resources to the afflicted.
+</br></br>
+<img src="static\assets\info.jpg" style="margin: auto;width: 950px;">
+<br><br><br><br>
+
+</div>
+
+<div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div id="cont">
+<div class="footer_center" style="font-family: 'Raleway', sans-serif;">
+	   	<h3>Contact Us :&nbsp&nbsp&nbsp<a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>&nbsp&nbsp&nbsp
+	   	<a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>&nbsp&nbsp&nbsp
+	   	<a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+<h3>
+	   	
+</div>
+</div>
+</div>
+</div>
+
+</body>
+
+<script>
+	let a=document.getElementById('text');
+
+	window.addEventListener('scroll', function() {
+		let value = window.scrollY;
+		a.style.left= value *-2 +'px';
+		a.style.top= value *1 +'px'
+
+		// a.style.marginRight = value * 4 + 'px';
+	})
+</script>
+</html>

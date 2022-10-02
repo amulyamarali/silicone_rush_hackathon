@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
+ 
+<title>Quikare-Home</title>
+<style>
+.parallax {
+   /*The image used */
+  /*background-image: url("img_parallax.jpg");*/
+
+  /* Set a specific height */
+	min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg_fullscreen{
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -10;
+}
+
+.main{
+	position: absolute;
+	width: auto;
+	left: 100px;
+	right: 100px;
+	background-color: #d49b54 ;
+	font-size: 30px;
+	padding-right: 50px;
+	padding-left: 50px;
+	opacity: 0.9;
+	z-index: -1;
+	
+}
+
+.nav_tag{
+	position: fixed;
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  font-family: 'Oswald', sans-serif ;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+  border-bottom: 2px solid white;
+}
+nav ul li.active a{
+  border-bottom: 2px solid white;
+}
+
+#text{
+	font-family: 'Roboto Mono', monospace;
+	margin-left:100px ;	
+	position: absolute;
+	color:  white;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	z-index: 9;
+
+}
+
+</style>
+</head>
+<body>
+<div class="nav_tag">
+<header>
+<nav>
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#"> Weather Threat Analysis</a></li>
+    <li><a href="#">Forest Fire Detector</a></li>
+    <li><a href="\Contact_Us">Contact Us</a></li>
+    
+      <a href="#">
+          <img src="" align="right" width="175px">
+      </a>
+    
+  </ul>  
+</nav>
+</header>
+</div>
+<h2 id="text"> Quikare </h2>
+
+<div class="parallax">
+	<div class="bg_fullscreen">
+		<video autoplay loop muted width="1550px">
+			<source src="static\assets\bg3_vid.mp4">
+		</video>
+	</div>
+</div>
+<div>
+
+</div>
+<div class="main">
+...
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+...
+</div>
+
+</body>
+
+<script>
+	let a=document.getElementById('text');
+
+	window.addEventListener('scroll', function() {
+		let value = window.scrollY;
+		a.style.left= value *-2 +'px';
+		a.style.top= value *1 +'px'
+
+		// a.style.marginRight = value * 4 + 'px';
+	})
+</script>
+</html>

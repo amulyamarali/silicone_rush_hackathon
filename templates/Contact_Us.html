@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href="{{url_for('static', filename='bg_vid.mp4')}}">
+
+	<title>Quikare-Contact</title>
+
+</head>
+
+<style>
+
+.parallax {
+   /*The image used */
+  /*background-image: url("img_parallax.jpg");*/
+
+  /* Set a specific height */
+  min-height: 150px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg_fullscreen{
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -10;
+}
+
+.main{
+  position: absolute;
+  width: auto;
+  left: 100px;
+  right: 100px;
+  background-color: #d49b54 ;
+  font-size: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  opacity: 0.9;
+  z-index: -1;
+  
+}
+
+.nav_tag{
+	position: fixed;
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  font-family: 'Oswald', sans-serif ;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+  border-bottom: 2px solid white;
+}
+nav ul li.active a{
+  border-bottom: 2px solid white;
+}
+	
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+
+<body>
+
+<div class="nav_tag">
+<header>
+<nav>
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="#"> Weather Threat Analysis</a></li>
+    <li><a href="#">Forest Fire Detector</a></li>
+    <li class="active"><a href="#">Contact Us</a></li>
+    
+      <a href="#">
+          <img src="" align="right" width="175px">
+      </a>
+    
+  </ul>  
+</nav>
+</header>
+</div>
+
+<div class="parallax">
+  <div class="bg_fullscreen">
+    <video autoplay loop muted width="1550px">
+      <source src="static\assets\bg3_vid.mp4">
+    </video>
+  </div>
+</div>
+<div>
+
+</div>
+<div class="main">
+...
+<div class="container">
+  <img src="twitter.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+...
+</div>
+
+</body>
+</html>
